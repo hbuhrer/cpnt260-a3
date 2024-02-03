@@ -1,5 +1,7 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 
+/* Body Styles */
 body {
     font-family: 'Orbitron', Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
@@ -10,6 +12,7 @@ body {
     background-color: #212020;
 }
 
+/* Heading 3 Styles */
 h3 {
     margin: 0;
     padding: 0;
@@ -18,6 +21,7 @@ h3 {
     font-weight: 400;
 }
 
+/* Header Styles */
 header {
     position: relative;
     height: 95vh;
@@ -31,6 +35,7 @@ header {
     text-align: center;
 }
 
+/* Header H1 Styles */
 header h1 {
     margin-top: 0em;
     font-size: 5em;
@@ -39,12 +44,14 @@ header h1 {
     padding-bottom: 0em;
 }
 
+/* Header Paragraph Styles */
 header p {
     padding: 1em;
     max-width: 450px;
     color: white;
 }
 
+/* Header Anchor Styles */
 header a {
     display: inline-block;
     padding: 1em 2em;
@@ -56,12 +63,14 @@ header a {
     transition: background-color 0.3s ease;
 }
 
+/* Header Anchor Hover Styles */
 header a:hover {
     background-color: #e65300;
     transform: scale(1.05);
     transition: transform 200ms ease-in;
 }
 
+/* Logo Dropdown Styles */
 .logo-dropdown {
     display: none;
     color: white;
@@ -70,23 +79,28 @@ header a:hover {
     padding-right: 0.3em;
 }
 
+/* Unordered List Styles */
 ul {
     padding: 0;
     margin: 0;
 }
 
+/* Logo Styles */
 .logo {
     transition: transform 200ms ease-in;
 }
 
+/* Adjusted Logo Dropdown Styles */
 .logo-dropdown {
     justify-content: center;
 }
 
+/* Logo Dropdown List Item Styles */
 .logo-dropdown > li{
     display: none;
 }
 
+/* Navigation Menu Styles */
 .nav-menu {
     display: flex;
     flex-direction: row;
@@ -97,6 +111,7 @@ ul {
     z-index: 1;
 }
 
+/* Navigation Menu Anchor and List Item Styles */
 .nav-menu a, li {
     color: white;
     text-decoration: none;
@@ -105,18 +120,21 @@ ul {
     display: inline-flex;
 }
 
+/* Navigation Menu Anchor Hover Styles */
 .nav-menu a:hover {
     color: orange;
     transform: scale(1.05);
     transition: transform 200ms ease-in;
 }
 
+/* Navigation Links List Item Hover Styles */
 .nav-links li:hover {
     color: orange;
     transform: scale(1.05);
     transition: transform 200ms ease-in;
 }
 
+/* Main Section Styles */
 main {
     padding-top: 2em;
     padding-bottom: 2em;
@@ -128,6 +146,7 @@ main {
     background-color: orange;
 }
 
+/* Figure Styles */
 figure {
     border: solid 1px #212020;
     padding: 1em;
@@ -139,16 +158,19 @@ figure {
     transition: transform 200ms ease-in;
 }
 
+/* Figure Hover Styles */
 figure:hover {
     color: orange;
     transform: scale(1.05);
     transition: transform 200ms ease-in;
 }
 
+/* Figure Caption Styles */
 figcaption {
     margin-top: 0.5em;
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 1em;
@@ -159,16 +181,20 @@ footer {
     z-index: 1;
 }
 
+/* Media Query for Screen Widths up to 650px */
 @media only screen and (max-width: 650px) {
 
+    /* Hide Navigation Links on Small Screens */
     .nav-links {
         display: none;
     }
 
+    /* Center Navigation Menu on Small Screens */
     .nav-menu {
         justify-content: center;
     }
 
+    /* Adjust Styles for Navigation Menu Anchor and List Item on Small Screens */
     .nav-menu a, li {
         padding-right: 0;
         text-align: center;
@@ -177,32 +203,38 @@ footer {
         padding-top: 0.5em;
     }
 
+    /* Logo Dropdown H3 Hover Styles on Small Screens */
     .logo-dropdown > h3:hover {
         color: orange;
         transform: scale(1.05);
         transition: transform 200ms ease-in;
     }
 
+    /* Logo Dropdown List Item Hover Styles on Small Screens */
     .logo-dropdown li:hover {
         color: orange;
         transform: scale(1.05);
         transition: transform 200ms ease-in;
     }
 
+    /* Adjust Footer Font Size on Small Screens */
     footer {
         font-size: 0.8em;
     }
 
+    /* Hide Logo on Small Screens */
     .logo {
         display: none;
     }
 
+    /* Display Logo Dropdown on Small Screens */
     .logo-dropdown {
         display: inline;
         position: relative;
         padding: 0;
     }
     
+    /* Logo Dropdown List Styles on Small Screens */
     .logo-dropdown > ul {
         display: none;
         position: absolute;
@@ -213,26 +245,32 @@ footer {
         width: 100%;
     }
     
+    /* Logo Dropdown List Item Display on Hover on Small Screens */
     .logo-dropdown:hover > li {
         display: flex;
     }
 
+    /* Adjust Header H1 Font Size on Small Screens */
     header h1 {
         font-size: 3em;
     }
     
+    /* Adjust Header Anchor Font Size on Small Screens */
     header a {
         font-size: 0.8em;
     }
 
+    /* Adjust Header Paragraph Font Size on Small Screens */
     header p {
         font-size: 0.9em;
     }
 
+    /* Adjust Main Section Flex Direction on Small Screens */
     main {
         flex-direction: column;
     }
 
+    /* Adjust Figure Max Width on Small Screens */
     figure {
         max-width: fit-content;
     }
